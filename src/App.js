@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Route } from "react-router-dom";
+import { Route ,Switch} from "react-router-dom";
 import Traders from "./containers/Traders";
 import TraderView from "./containers/TraderView";
 import { updateData } from "./store/actions/traderAction";
@@ -31,8 +31,11 @@ useEffect(()=>{
   return (
    <>
     <div className="App">
-       <Route exact path="/traders/:id" component={TraderView}/>
+      <Switch>
+      <Route exact path="/traders/:id" component={TraderView}/>
        <Route exact path="/traders"  component={Traders}/>
+       <Route  component={Traders}/>
+      </Switch>
     </div>
    </>
   );
