@@ -223,7 +223,7 @@ export default function TraderView() {
             </select>
           </div>
         </div>
-        <Link to="/traders">All traders</Link>
+        <Link to="/traders">Все трейдеры</Link>
       </TraderViewStyle>
     </>
   );
