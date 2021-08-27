@@ -1,3 +1,5 @@
+Welcome to Trader.uz by Abdulloh 👋
+🏠 https://work-info-63cpy5zp5-abdullloh.vercel.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
