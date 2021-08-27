@@ -38,7 +38,7 @@ width:100%;
           display: flex;
           height: 25%;
           border-bottom: 1px solid #fff;
-          .percent{
+          .workInfo_header-data{
             width: 33.3%;
             padding: 20px 20px;
           }
@@ -90,7 +90,7 @@ width:100%;
      .chart{
        width:68%;
      }
-    .select{
+    .selectYear{
       width: 28%;
       padding: 20px 0 0 0px;
       margin-left: 15px;
@@ -133,7 +133,7 @@ width:100%;
     }
     .chartContainer{
       flex-direction: column-reverse;
-       .select{
+       .selectYear{
          width:100%;
        }
        .chart{

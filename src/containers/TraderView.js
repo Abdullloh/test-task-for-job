@@ -33,7 +33,7 @@ export default function TraderView() {
     allowed_dropdown,
   } = result[0];
 
-  const [historyy, setHistory] = useState([]);
+  const [selectOptions, setSelectOptions] = useState([]);
   ////Select
 
   const handleOption = (e) => {
@@ -45,7 +45,7 @@ export default function TraderView() {
     for (const keys in history) {
       arrayOfKeys.push(keys);
     }
-    setHistory(arrayOfKeys);
+    setSelectOptions(arrayOfKeys);
   };
 
   const months = [
@@ -129,7 +129,7 @@ export default function TraderView() {
           </div>
           <div className="workInfo">
             <div className="workInfo_header">
-              <div className="percent">
+              <div className="workInfo_header-data">
                 <h4>ROI</h4>
                 <p>{roi}</p>
               </div>
@@ -210,14 +210,13 @@ export default function TraderView() {
             <Bar data={data} options={options} />
           </div>
 
-          <div className="select">
+          <div className="selectYear">
             <h4>Выберите год </h4>
             <select
               onChange={(e) => handleOption(e.target.value)}
-              name="$"
-              id=""
+              name="select"
             >
-              {historyy?.map((item) => {
+              {selectOptions?.map((item) => {
                 return <option value={item}>{item}</option>;
               })}
             </select>

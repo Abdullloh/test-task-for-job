@@ -33,6 +33,18 @@ const TraderStyle = styled.div`
 
      }
     }
-
+@media   (max-width:768px){
+    padding:0;
+       .mainContainer{
+        height: 100vh;
+        background: #31343d;
+        .trader{
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+}
 `
 export {TraderStyle}

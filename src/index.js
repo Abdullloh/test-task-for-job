@@ -12,8 +12,8 @@ ReactDOM.render(
   <Provider store={store}>
       <PersistGate  loading={<h1>Loading ...</h1>} persistor={persistor}>
         <BrowserRouter>
-          <GlobalStyle/>
           <App />
+          <GlobalStyle/>
         </BrowserRouter>
         </PersistGate>
   </Provider>,
